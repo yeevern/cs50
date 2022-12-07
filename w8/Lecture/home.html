@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>home</title>
+    </head>
+    <body>
+        <header style="font-size: large; text-align: center;">
+            John Harvard
+        </header>
+        <main style="font-size: medium; text-align: center;">
+            Welcome to my home page!
+        </main>
+        <footer style="font-size: small; text-align: center;">
+            Copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
+
+
+<!-- we can clear it up can write lke this below: -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>home</title>
+    </head>
+    <body style="text-align: center;">
+        <header style="font-size: large;">
+            John Harvard
+        </header>
+        <main style="font-size: medium;">
+            Welcome to my home page!
+        </main>
+        <footer style="font-size: small;">
+            Copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
+
+
+<!-- To factor out, or separate our CSS from HTML, we can include styles in the <head> tag -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+
+            body
+            {
+                text-align: center;
+            }
+
+            header
+            {
+                font-size: large;
+            }
+
+            main
+            {
+                font-size: medium;
+            }
+
+            footer
+            {
+                font-size: small;
+            }
+
+        </style>
+        <title>home</title>
+    </head>
+    <body>
+        <header>
+            John Harvard
+        </header>
+        <main>
+            Welcome to my home page!
+        </main>
+        <footer>
+            Copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
+
+
+<!-- We can also use a more specific class selector: -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <style>
+
+            .centered
+            {
+                text-align: center;
+            }
+
+            .large
+            {
+                font-size: large;
+            }
+
+            .medium
+            {
+                font-size: medium;
+            }
+
+            .small
+            {
+                font-size: small;
+            }
+
+        </style>
+        <title>css</title>
+    </head>
+    <body class="centered">
+        <header class="large">
+            John Harvard
+        </header>
+        <main class="medium">
+            Welcome to my home page!
+        </main>
+        <footer class="small">
+            Copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
+
+
+<!-- Finally, we can take all of the CSS for the properties and move them to another file with the <link> tag: -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="home.css" rel="stylesheet">
+        <title>css</title>
+    </head>
+    <body class="centered">
+        <header class="large">
+            John Harvard
+        </header>
+        <main class="medium">
+            Welcome to my home page!
+        </main>
+        <footer class="small">
+            Copyright &#169; John Harvard
+        </footer>
+    </body>
+</html>
